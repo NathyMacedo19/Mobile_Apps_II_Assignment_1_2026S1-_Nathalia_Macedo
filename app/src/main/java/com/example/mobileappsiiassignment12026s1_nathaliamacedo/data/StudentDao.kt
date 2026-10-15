@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface StudentDao {
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.ABORT)
     suspend fun insertStudent(student: Student)
 
     @Query("SELECT * FROM students WHERE studentId = :studentId")

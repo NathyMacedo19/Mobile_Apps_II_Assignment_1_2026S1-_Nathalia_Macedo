@@ -10,17 +10,18 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.PersonAdd
+import androidx.compose.material.icons.filled.School
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
-import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -38,7 +39,7 @@ fun HomeScreen(
 ) {
     Scaffold(
         topBar = {
-            TopAppBar(
+            CenterAlignedTopAppBar(
                 title = { Text("Student Registration Portal", fontWeight = FontWeight.Bold) },
                 colors = TopAppBarDefaults.topAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primaryContainer,
@@ -55,6 +56,17 @@ fun HomeScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
+            // Graduation cap icon to give the Home screen a visual identity
+            Icon(
+                imageVector = Icons.Default.School,
+                contentDescription = "Student Registration logo",
+                tint = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.size(96.dp)
+            )
+
+            Spacer(modifier = Modifier.height(24.dp))
+
+
             Card(
                 modifier = Modifier
                     .fillMaxWidth()

@@ -153,7 +153,7 @@ class StudentViewModel(application: Application) : AndroidViewModel(application)
             } catch (e: Exception) {
                 _registrationUiState.value = state.copy(
                     isSuccess = false,
-                    message = "Error saving student: ${e.localizedMessage}"
+                    message = "A student with ID '\$studentIdClean' already exists."
                 )
             }
         }
