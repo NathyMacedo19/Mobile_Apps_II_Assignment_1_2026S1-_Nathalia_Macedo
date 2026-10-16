@@ -37,6 +37,7 @@ fun HomeScreen(
     onNavigateToAddStudent: () -> Unit,
     onNavigateToSearchStudent: () -> Unit
 ) {
+    // AI-assisted (Claude, 15/10/2026): CenterAlignedTopAppBar instead of TopAppBar for a centred title
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(

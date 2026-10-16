@@ -51,6 +51,7 @@ fun AddStudentScreen(
 ) {
     val state by viewModel.registrationUiState.collectAsStateWithLifecycle()
 
+    // AI-assisted (Claude, 15/10/2026): CenterAlignedTopAppBar instead of TopAppBar for a centred title
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(
