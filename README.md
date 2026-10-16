@@ -15,10 +15,16 @@ An Android app to register students and search for them by ID. Built with Kotlin
 
 🏗️ Architecture
 The app follows the MVVM pattern (Model – View – ViewModel):
+UI (Compose screens)  →  StudentViewModel  →  StudentRepository  →  StudentDao  →  Room database
+        ↑                        │
+        └──── StateFlow ─────────┘   (screens observe state and update automatically)
 
-<img width="586" height="166" alt="Screenshot 2026-10-16 175952" src="https://github.com/user-attachments/assets/3723225b-58dd-44c4-aa09-61341e22940e" />
-
-<img width="639" height="363" alt="Screenshot 2026-10-16 180034" src="https://github.com/user-attachments/assets/89d9157d-8445-4c93-a596-4c22e6040070" />
+Folder	Contents
+data/	Student (entity), StudentDao, AppDatabase, StudentRepository
+ui/	StudentViewModel (state + validation)
+ui/screens/	HomeScreen, AddStudentScreen, SearchStudentScreen
+ui/navigation/	AppNavigation (NavHost and routes)
+ui/theme/	Colours, typography and theme        
 
 🛠️ Tech Stack
 * Kotlin · Jetpack Compose · Material 3
