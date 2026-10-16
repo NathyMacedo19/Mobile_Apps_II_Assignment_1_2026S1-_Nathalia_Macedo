@@ -1,6 +1,7 @@
-##  Student Registration Portal
+#  Student Registration Portal
 
-##  Mobile Apps II – Assignment 1 (20%) Nathalia Macedo · BSc in Computing · Dorset College Dublin · Semester 1, 2026
+** Mobile Apps II – Assignment 1 (20%)**
+Nathalia Macedo · BSc in Computing · Dorset College Dublin · Semester 1, 2026
 
 An Android app to register students and search for them by ID. Built with Kotlin, Jetpack Compose and a Room database.
 
@@ -41,7 +42,7 @@ flowchart LR
 * Navigation Compose
 
 ##  ▶️ How to Run
-1. Clone the repository:git clone https://github.com/NathyMacedo19/Mobile_Apps_II_Assignment_1_2026S1-_Nathalia_Macedo.git
+1. Clone the repository:'git clone https://github.com/NathyMacedo19/Mobile_Apps_II_Assignment_1_2026S1-_Nathalia_Macedo.git'
 2. Open the project in Android Studio and let Gradle sync.
 3. Select an emulator or device (Android 9 / API 28 or higher).
 4. Click Run ▶.
@@ -54,4 +55,4 @@ flowchart LR
 5. Search S999: a "not found" message appears.
 
 ##  📄 Report & AI Declaration
-The full report, including design considerations, test results, references, the answers to Section 2 and the AI usage declaration, is in ASSIGNMENT_REPORT.md.
+The full report, including design considerations, test results, references, the answers to Section 2 and the AI usage declaration, is in Mobile Apps II - Assignment 1 Nathalia Macedo 77742.pdf
