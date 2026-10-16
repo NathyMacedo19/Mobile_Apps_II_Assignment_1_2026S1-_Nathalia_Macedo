@@ -18,7 +18,7 @@ An Android app to register students and search for them by ID. Built with Kotlin
 The app follows the **MVVM** pattern (Model – View – ViewModel):
 
 ```mermaid
-flowchart LR
+flowchart TB
     UI["📱 Compose Screens"] -->|user actions| VM["🧠 StudentViewModel"]
     VM -->|calls| REPO["📦 StudentRepository"]
     REPO --> DAO["🔎 StudentDao"]
