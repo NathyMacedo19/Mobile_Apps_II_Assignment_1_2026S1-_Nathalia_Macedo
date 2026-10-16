@@ -54,4 +54,4 @@ flowchart LR
 5. Search S999: a "not found" message appears.
 
 ##  📄 Report & AI Declaration
-The full report, including design considerations, test results, references, the answers to Section 2 and the AI usage declaration, is in ASSIGNMENT_REPORT.md.
+The full report, including design considerations, test results, references, the answers to Section 2 and the AI usage declaration, is in Mobile Apps II - Assignment 1 Nathalia Macedo 77742.pdf
