@@ -13,18 +13,26 @@ An Android app to register students and search for them by ID. Built with Kotlin
 * Data is saved locally with Room, so records remain after the app is closed
 * Custom purple theme and centre-aligned top bars on all screens
 
-🏗️ Architecture
-The app follows the MVVM pattern (Model – View – ViewModel):
-UI (Compose screens)  →  StudentViewModel  →  StudentRepository  →  StudentDao  →  Room database
-        ↑                        │
-        └──── StateFlow ─────────┘   (screens observe state and update automatically)
+## 🏗️ Architecture
 
-Folder	Contents
-data/	Student (entity), StudentDao, AppDatabase, StudentRepository
-ui/	StudentViewModel (state + validation)
-ui/screens/	HomeScreen, AddStudentScreen, SearchStudentScreen
-ui/navigation/	AppNavigation (NavHost and routes)
-ui/theme/	Colours, typography and theme        
+The app follows the **MVVM** pattern (Model – View – ViewModel):
+
+```mermaid
+flowchart LR
+    UI["📱 Compose Screens"] -->|user actions| VM["🧠 StudentViewModel"]
+    VM -->|calls| REPO["📦 StudentRepository"]
+    REPO --> DAO["🔎 StudentDao"]
+    DAO --> DB[("🗄️ Room Database")]
+    VM -.->|StateFlow: screens update automatically| UI
+```
+
+| Folder | Contents |
+|---|---|
+| `data/` | `Student` (entity), `StudentDao`, `AppDatabase`, `StudentRepository` |
+| `ui/` | `StudentViewModel` (state + validation) |
+| `ui/screens/` | `HomeScreen`, `AddStudentScreen`, `SearchStudentScreen` |
+| `ui/navigation/` | `AppNavigation` (NavHost and routes) |
+| `ui/theme/` | Colours, typography and theme |    
 
 🛠️ Tech Stack
 * Kotlin · Jetpack Compose · Material 3
