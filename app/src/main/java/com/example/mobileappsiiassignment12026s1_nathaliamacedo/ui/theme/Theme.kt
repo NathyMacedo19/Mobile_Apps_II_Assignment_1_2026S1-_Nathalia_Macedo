@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
+// AI-assisted (Claude, 15/10/2026): colour role mapping for dark and light schemes
 private val DarkColorScheme = darkColorScheme(
     primary = LightLilac,
     onPrimary = PurpleBlack,
@@ -34,7 +35,7 @@ private val LightColorScheme = lightColorScheme(
 fun MobileAppsIIAssignment12026S1NathaliaMacedoTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = false,
+    dynamicColor: Boolean = false, // AI-assisted (Claude, 15/10/2026): dynamic colour disabled to keep the custom purple branding on all devices
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {

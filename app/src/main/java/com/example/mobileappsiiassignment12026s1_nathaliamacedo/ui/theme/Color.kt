@@ -2,7 +2,7 @@ package com.example.mobileappsiiassignment12026s1_nathaliamacedo.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-// Strong tones – main brand colours (buttons, titles, icons)
+// AI-assisted (Claude, 15/10/2026): custom purple palette (hex values and grouping suggested by AI)
 val RoyalViolet = Color(0xFF5B2A86)
 val Blackberry = Color(0xFFA0447A)
 val PurpleBlack = Color(0xFF2A0B48)

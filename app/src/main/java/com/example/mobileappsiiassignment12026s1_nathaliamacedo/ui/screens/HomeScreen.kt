@@ -56,7 +56,7 @@ fun HomeScreen(
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            // Graduation cap icon to give the Home screen a visual identity
+            // AI-assisted (Claude, 15/10/2026): graduation cap icon to give the Home screen a visual identity
             Icon(
                 imageVector = Icons.Default.School,
                 contentDescription = "Student Registration logo",

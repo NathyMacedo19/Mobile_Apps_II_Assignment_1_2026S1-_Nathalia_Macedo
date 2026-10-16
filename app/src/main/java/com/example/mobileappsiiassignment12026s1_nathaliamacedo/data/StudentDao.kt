@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface StudentDao {
 
-    @Insert(onConflict = OnConflictStrategy.ABORT)
+    @Insert(onConflict = OnConflictStrategy.ABORT) // AI-assisted (Claude, 15/10/2026): ABORT instead of REPLACE so a duplicate ID cannot overwrite an existing student
     suspend fun insertStudent(student: Student)
 
     @Query("SELECT * FROM students WHERE studentId = :studentId")
