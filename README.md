@@ -1,10 +1,10 @@
-Student Registration Portal
+##  Student Registration Portal
 
-Mobile Apps II – Assignment 1 (20%) Nathalia Macedo · BSc in Computing · Dorset College Dublin · Semester 1, 2026
+##  Mobile Apps II – Assignment 1 (20%) Nathalia Macedo · BSc in Computing · Dorset College Dublin · Semester 1, 2026
 
 An Android app to register students and search for them by ID. Built with Kotlin, Jetpack Compose and a Room database.
 
-✨ Features
+## ✨ Features
 * Home page to navigate to registration or search
 * Register a student with ID, name, course and year of study
 * Built-in validation: year must be between 1 and 4, all fields are required
@@ -34,24 +34,24 @@ flowchart LR
 | `ui/navigation/` | `AppNavigation` (NavHost and routes) |
 | `ui/theme/` | Colours, typography and theme |    
 
-🛠️ Tech Stack
+##  🛠️ Tech Stack
 * Kotlin · Jetpack Compose · Material 3
 * Room (with KSP) for local storage
 * ViewModel + StateFlow for UI state
 * Navigation Compose
 
-▶️ How to Run
+##  ▶️ How to Run
 1. Clone the repository:git clone https://github.com/NathyMacedo19/Mobile_Apps_II_Assignment_1_2026S1-_Nathalia_Macedo.git
 2. Open the project in Android Studio and let Gradle sync.
 3. Select an emulator or device (Android 9 / API 28 or higher).
 4. Click Run ▶.
 
-🧪 Quick Test
+##  🧪 Quick Test
 1. Register a student, e.g. S1, Ana, Computing, year 2.
 2. Try year 5: an error is shown and nothing is saved.
 3. Try registering S1 again: a duplicate ID error is shown.
 4. Search S1: the student's details appear.
 5. Search S999: a "not found" message appears.
 
-📄 Report & AI Declaration
+##  📄 Report & AI Declaration
 The full report, including design considerations, test results, references, the answers to Section 2 and the AI usage declaration, is in ASSIGNMENT_REPORT.md.
